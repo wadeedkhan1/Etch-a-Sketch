@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etch-a-Sketch</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Etch-a-Sketch</h1>
+    <div class="container">
+        <div class="controls">
+            <div class="colorSelector">
+                <label for="brushColor">Brush Color</label>
+                <input type="color" id="brushColor" value="#0F0F0F">
+            </div>
+            <div class="activeMode">
+                <p>Active Mode: <span id="activeMode">Draw</span></p>
+            </div>
+            <div class="gridsize">
+                <label for="gridSize">Grid Size</label><br>
+                <output id="sliderValue"></output>
+                <input type="range" id="gridSize" min="16" max="64" value="32">
+            </div>
+            <div class="buttons">
+                <input type="button" id="eraseButton" value="Erase">
+                <input type="button" id="fillButton" value="Fill">
+                <input type="button" id="clearButton" value="Clear">
+                <input type="button" id="rainbowButton" value="Rainbow!">
+                <input type="button" id="lightenButton" value="Lighten">
+                <input type="button" id="darkenButton" value="Darken">
+            </div>
+        </div>
+        <div class="board" id="board"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
